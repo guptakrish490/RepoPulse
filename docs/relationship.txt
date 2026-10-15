@@ -1,0 +1,6 @@
+Relationship  ----------------------------  Cardinality
+users → repositories	                    One-to-many
+repositories ↔ contributors	                Many-to-many via repository_contributors
+repositories → branches	                    One-to-many
+Repository-contributor pair → commits	    One-to-many
+branches → commits	                        One-to-many
