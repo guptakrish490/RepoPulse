@@ -1,7 +1,0 @@
-CREATE TABLE contributors (
-    id SERIAL PRIMARY KEY,
-    github_username VARCHAR(100) NOT NULL UNIQUE,
-    display_name VARCHAR(150) DEFAULT 'USER',
-    email VARCHAR(100) UNIQUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);

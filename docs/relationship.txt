@@ -1,6 +1,8 @@
-Relationship  ----------------------------  Cardinality
-users → repositories	                    One-to-many
-repositories ↔ contributors	                Many-to-many via repository_contributors
-repositories → branches	                    One-to-many
-Repository-contributor pair → commits	    One-to-many
-branches → commits	                        One-to-many
+    R1. AppUser to Repository: one-to-many: one application user can register multiple repositories, and each repository has one registering user.
+    R2. Repository to Membership: one-to-many.
+    R3. Contributor to Membership: one-to-many.
+    R4. Repository to Commit: one-to-many.
+    R5. Contributor to Commit: one-to-many: a contributor can author multiple commits.
+    R6. Repository to Issue: one-to-many.
+    R7. Contributor to Issue as reporter: one-to-many.
+    R8. Contributor to Issue as assignee: one-to-many: an issue can have no assignee.
