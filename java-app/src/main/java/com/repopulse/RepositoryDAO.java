@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.repopulse.DBConnection;
 
 public class RepositoryDAO {
     public void displayUsers() {
