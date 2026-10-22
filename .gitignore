@@ -6,3 +6,6 @@ target/
 
 # Environment files and secrets
 .env
+
+
+.vscode/
